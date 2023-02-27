@@ -8,7 +8,7 @@ Started with just bridging between usb and uart, but enhanced to bridge to wifi 
 
 Connecting from a linux host to the tcp port is as simple as
 ```
-socat pty,link=$HOME/ttyV0,raw,waitslave tcp:YOUR-ESP-IP:8880 & sleep 3 & minicom -D $HOME/ttyV0 --color=on -b115200
+socat pty,link=$HOME/ttyV0,raw,waitslave tcp:YOUR-ESP-IP:8880 & sleep 3 && minicom -D $HOME/ttyV0 --color=on -b115200
 ```
 
 enjoy at your own risk.
